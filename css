@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Modificado</title>
     <style>
-        /* 1. Botón hover: Ya lo tenías, cambia a color #3c6869 al pasar el mouse */
         button {
             background-color: #49729a;
             color: white;
@@ -22,13 +21,13 @@
             text-align: center;
         }
 
-        /* 3. Bordes con 3 medidas ABSOLUTAS diferentes y un borde gris punteado */
+
         div.cabecera {
             background-color: #eaeaea;
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
-            border: 5px solid #4f7172; /* Medida absoluta 1: px (Píxeles) */
+            border: 5px solid #4f7172;
         }
 
         div.article {
@@ -36,7 +35,7 @@
             padding: 10px;
             margin: 20px;
             border-radius: 10px;
-            border: 0.2cm dotted gray; /* Medida absoluta 2: cm (Centímetros) + borde gris punteado */
+            border: 0.2cm dotted gray;
         }
 
         div.body {
@@ -44,21 +43,18 @@
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
-            border: 10pt solid #5ba0a3; /* Medida absoluta 3: pt (Puntos) */
+            border: 10pt solid #5ba0a3; 
         }
 
-        /* 4. Clase grande con 2em */
         .grande {
             font-size: 2em;
         }
 
-        /* 5. Clase azul con texto azul real */
         span.azul {
             color: blue;
             font-weight: bold;
         }
 
-        /* Estilo para la caja explicativa del Box Model */
         section.caja-modelo {
             background-color: #f0f8ff;
             padding: 20px;
