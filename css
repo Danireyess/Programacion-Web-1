@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificado</title>
+    <style>
+        /* 1. Botón hover: Ya lo tenías, cambia a color #3c6869 al pasar el mouse */
+        button {
+            background-color: #49729a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3c6869;
+            color: white;
+        }
+
+        h1 {
+            color: #194143;
+            text-align: center;
+        }
+
+        /* 3. Bordes con 3 medidas ABSOLUTAS diferentes y un borde gris punteado */
+        div.cabecera {
+            background-color: #eaeaea;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 5px solid #4f7172; /* Medida absoluta 1: px (Píxeles) */
+        }
+
+        div.article {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 0.2cm dotted gray; /* Medida absoluta 2: cm (Centímetros) + borde gris punteado */
+        }
+
+        div.body {
+            background-color: #eaeaea;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 10pt solid #5ba0a3; /* Medida absoluta 3: pt (Puntos) */
+        }
+
+        /* 4. Clase grande con 2em */
+        .grande {
+            font-size: 2em;
+        }
+
+        /* 5. Clase azul con texto azul real */
+        span.azul {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Estilo para la caja explicativa del Box Model */
+        section.caja-modelo {
+            background-color: #f0f8ff;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #005f99;
+            border-radius: 5px;
+        }
+
+        p#azul {
+            font-size: 50px;
+            color: #433c19;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h1 title="main cabecera otro">Titulo Principal en cabecera</h1>
+        </div>
+    </header>
+
+    <div class="article">
+        <article>
+            <h2 lang="es-ES" class="grande">Titulo Secundario (Con clase grande)</h2>
+            <h2 lang="en-US">Titulo Secundario 1</h2>
+            <h2 lang="es-MX">Titulo Secundario 2</h2>
+            <h2 title="otro">Titulo Secundario</h2>
+            <h2 lang="es-ES">Titulo Terciario</h2>
+            
+            <p>Aqui viene el span: <span class="azul">Holaaaa.</span> Y con clase azul.</p>
+        </article> 
+    </div>
+
+    <section class="caja-modelo">
+        <h2>El Modelo de Caja (Box Model) en CSS</h2>
+        <p>Cuando utilizamos CSS, el navegador envuelve cada elemento HTML en una "caja" rectangular. Este modelo determina cuánto espacio ocupa un elemento y cómo se relaciona con otros. Se compone de cuatro áreas:</p>
+        <ul>
+            <li><strong>Content (Contenido):</strong> El contenido real del elemento (texto, imágenes).</li>
+            <li><strong>Padding (Relleno):</strong> Espacio transparente que rodea el contenido, dentro del borde.</li>
+            <li><strong>Border (Borde):</strong> Una línea que rodea el padding y el contenido.</li>
+            <li><strong>Margin (Margen):</strong> Espacio transparente exterior que separa este elemento de otros elementos vecinos.</li>
+        </ul>
+    </section>
+
+    <div class="body">
+        <button>Boton de prueba</button>
+        <p>Texto de prueba 1</p>
+        <p id="azul">Texto de prueba ID Azul</p>
+        <p>Texto de prueba 2</p>
+        
+        <article>
+            <p class="prueba grande">Texto con clase grande</p>
+            <p class="prueba">Texto normal de prueba</p>
+        </article>
+    </div>
+</body>
+</html>
